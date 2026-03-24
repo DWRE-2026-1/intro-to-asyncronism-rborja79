@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon Arena</title>
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <ul class="nav__list" id="nav-list">
+                <li class="nav__item">
+                    <button class="nav__link" data-page="home">Home</button>
+                </li>
+                <li class="nav__item">
+                    <button class="nav__link" data-page="game" id="nav-game">Game</button>
+                </li>
+                <li class="nav__item">
+                    <button class="nav__link" data-page="team" id="nav-team">My Team</button>
+                </li>
+                <li class="nav__item">
+                    <button class="nav__link" data-page="gyms" id="nav-gyms">Gyms</button>
+                </li>
+                <li class="nav__item">
+                    <button class="nav__link" data-page="league" id="nav-league">League</button>
+                </li>
+                <li class="nav__item">
+                    <button class="nav__link" data-page="shop" id="nav-shop">Shop</button>
+                </li>
+            </ul>
+            <div class="nav__meta" id="nav-meta">
+                <span class="nav__trainer-label">Trainer:</span>
+                <span class="nav__trainer-name" id="nav-trainer-name">-</span>
+            </div>
+            <div class="nav__lang">
+                <label for="language-select" id="language-select-label">Idioma</label>
+                <select id="language-select" class="nav__lang-select">
+                    <option value="es">ES</option>
+                    <option value="en">EN</option>
+                </select>
+            </div>
+            <div class="nav__audio-controls">
+                <button id="sound-toggle" class="nav__sound-toggle" type="button">Sound: ON</button>
+                <label class="nav__volume-group" for="music-volume">
+                    <span id="music-volume-label">Music</span>
+                    <input id="music-volume" class="nav__volume-range" type="range" min="0" max="1" step="0.05" value="0.4">
+                </label>
+                <label class="nav__volume-group" for="effects-volume">
+                    <span id="effects-volume-label">Effects</span>
+                    <input id="effects-volume" class="nav__volume-range" type="range" min="0" max="1" step="0.05" value="0.7">
+                </label>
+                <span class="nav__audio-status" id="audio-status">Audio: Ready</span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main" id="app">
+        <section class="page" id="page-home"></section>
+        <section class="page page--hidden" id="page-starter"></section>
+        <section class="page page--hidden" id="page-game"></section>
+        <section class="page page--hidden" id="page-team"></section>
+        <section class="page page--hidden" id="page-gyms"></section>
+        <section class="page page--hidden" id="page-league"></section>
+        <section class="page page--hidden" id="page-shop"></section>
+        <section class="page page--hidden" id="page-battle"></section>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__text">Pokémon Arena</p>
+    </footer>
+
+    <button id="help-button" class="help-floating-button">Help</button>
+
+    <script type="module" src="./js/main.js"></script>
+</body>
+</html>

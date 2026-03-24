@@ -31,3 +31,4 @@
 | Calidad del código     | 1.5     |
 | Funcionalidad      | 1.5      |
 
+**Pagina desplegada en:** https://dwre-2026-1.github.io/intro-to-asyncronism-rborja79/
